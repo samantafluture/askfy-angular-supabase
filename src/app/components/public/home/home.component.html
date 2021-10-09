@@ -1,0 +1,27 @@
+<div id="page-auth">
+  <aside>
+    <img src="assets/images/illustration.svg" alt="illustration of questions and answers" />
+    <strong>Create live Q&amp;A rooms</strong>
+    <p>Answer questions of your audience in real time</p>
+  </aside>
+  <main>
+    <div class="main-content">
+      <img src="assets/images/logo.svg" alt="Askfy logo" />
+      <button (click)="createRoom()" class="create-room">
+        <img src="assets/images/google-icon.svg" alt="Google logo" />
+        Create a room with Google Login
+      </button>
+      <div class="separator">or join a room</div>
+      <form (ngSubmit)=joinRoom()>
+        <input
+          type="text"
+          placeholder="Enter the room code"
+          #roomCode
+        />
+        <button type="submit" class="button">
+          Join room
+        </button>
+      </form>
+    </div>
+  </main>
+</div>
